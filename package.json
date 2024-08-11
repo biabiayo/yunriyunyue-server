@@ -1,0 +1,19 @@
+{
+  "name": "yun-serve",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch src --watch config src/index.js --exec babel-node"
+  },
+  "author": "biabiayo",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "babel-node": "^0.0.1-security",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
