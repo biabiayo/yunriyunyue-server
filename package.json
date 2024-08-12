@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
+    "dev": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --watch src --watch config src/index.js --exec babel-node"
   },
@@ -15,5 +16,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0"
+  },
+  "nodemonConfig": {
+    "watch":["src/"],
+    "ext":"js json"
   }
 }
