@@ -12,13 +12,17 @@
   "description": "",
   "dependencies": {
     "babel-node": "^0.0.1-security",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0"
   },
+  "type": "module",
   "nodemonConfig": {
-    "watch":["src/"],
-    "ext":"js json"
+    "watch": [
+      "src/"
+    ],
+    "ext": "js json"
   }
 }

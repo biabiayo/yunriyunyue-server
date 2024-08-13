@@ -1,7 +1,7 @@
 // 链接数据库前端等相关操作
-
+import express from 'express'
+const port = 3000
 const mysql = require('mysql')
-const express = require('express')
 const app = express()
 const router = express.Router();
 const cors = require('cors');  // 跨域
@@ -34,7 +34,7 @@ const option = {
   host: 'localhost',
   user: '*****',
   password: '*****',
-  port: '3306',
+  port: '3000',
   database: '*****',
   connectTimeout: 5000, //连接超时
   multipleStatements: false //是否允许一个query中包含多条sql语句
